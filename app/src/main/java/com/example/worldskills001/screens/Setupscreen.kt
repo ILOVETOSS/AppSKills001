@@ -456,6 +456,7 @@ fun Pretype(onNext: () -> Unit){
 
 @Composable
 fun Checkin(onNext: () -> Unit){
+    Text("dwqdw")
 
 }
 @Composable
