@@ -53,6 +53,7 @@ import androidx.compose.ui.unit.sp
 import com.example.worldskills001.Mybutton.Backbutton
 import com.example.worldskills001.Mybutton.Nextbutton
 import com.example.worldskills001.R
+import com.example.worldskills001.core.Core
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
@@ -143,6 +144,7 @@ fun Nickname(onNext: () -> Unit){
 
                     }
                     else{
+                        Core.user.nickname = text
                         onNext()
 
                     }
@@ -237,10 +239,15 @@ fun Exp(onNext: () -> Unit){
             Spacer(modifier = Modifier.width(120.dp))
             if(select > 0){
                 Nextbutton() {
+                    Core.user.exprience = when(select){
+                        1 -> "캠핑초보"
+                        2 -> "캠핑보통"
+                        3 -> "캠핑숙련"
+                        else -> ""
+                    }
                     onNext()
                 }
             }
-
 
         }
         Spacer(modifier = Modifier.height(40.dp))
@@ -325,6 +332,7 @@ fun Person(onNext: () -> Unit){
             Backbutton() { }
             Nextbutton(
             ) {
+                Core.user.personCount = count
                 onNext()
             }
         }
@@ -454,6 +462,13 @@ fun Pretype(onNext: () -> Unit){
             Spacer(modifier = Modifier.width(120.dp))
             if(select > 0){
                 Nextbutton() {
+                    Core.user.perfertype = when (select) {
+                        1 -> "오토캠핑"
+                        2 -> "글램핑"
+                        3 -> "카라반"
+                        4 -> "차박"
+                        else -> "" // when을 변수에 대입할 땐 반드시 else가 필요함
+                    }
                     onNext()
                 }
             }
@@ -624,6 +639,7 @@ fun Checkin(onNext: () -> Unit) {
             Spacer(modifier = Modifier.width(90.dp))
             if(selectDay != null){
                 Nextbutton() {
+                    Core.user.checkinDate = selectDay!!
                     onNext()
                 }
             }
@@ -732,6 +748,13 @@ fun Pretype2(onNext: () -> Unit){
             Spacer(modifier = Modifier.width(100.dp))
             if(select > 0){
                 Nextbutton() {
+                    Core.user.activity = when(select){
+                        1 -> "힐링"
+                        2 -> "바비큐"
+                        3 -> "액티비티"
+                        5 -> "반려동물 동"
+                        else -> ""
+                    }
                     onNext()
                 }
             }
