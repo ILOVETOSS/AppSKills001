@@ -25,6 +25,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.worldskills001.R
 
 @Composable
@@ -79,8 +80,142 @@ fun ResScreen(
                         painter = painterResource(R.drawable.img3),
                         contentDescription = null
                     )
-                    Text("캠핑 닉네임")
-                    Text("닉네임")
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("캠핑 닉네임", fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("닉네임",fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(5.dp))
+                    Image(
+                        painter = painterResource(R.drawable.arrowgo),
+                        contentDescription = null
+                    )
+                }
+            }
+            Spacer(modifier = Modifier.height(10.dp))
+            Button(
+                modifier = Modifier
+                    .height(70.dp)
+                    .width(350.dp),
+                onClick = {}
+            ) {
+                Row(
+                    modifier = Modifier,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Image(
+                        painter = painterResource(R.drawable.img3),
+                        contentDescription = null
+                    )
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("캠핑 경험", fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("닉네임",fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(5.dp))
+                    Image(
+                        painter = painterResource(R.drawable.arrowgo),
+                        contentDescription = null
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(10.dp))
+            Button(
+                modifier = Modifier
+                    .height(70.dp)
+                    .width(350.dp),
+                onClick = {}
+            ) {
+                Row(
+                    modifier = Modifier,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Image(
+                        painter = painterResource(R.drawable.img3),
+                        contentDescription = null
+                    )
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("동반 인원", fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("닉네임",fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(5.dp))
+                    Image(
+                        painter = painterResource(R.drawable.arrowgo),
+                        contentDescription = null
+                    )
+                }
+            }
+            Spacer(modifier = Modifier.height(10.dp))
+            Button(
+                modifier = Modifier
+                    .height(70.dp)
+                    .width(350.dp),
+                onClick = {}
+            ) {
+                Row(
+                    modifier = Modifier,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Image(
+                        painter = painterResource(R.drawable.img3),
+                        contentDescription = null
+                    )
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("숙박 유형", fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("닉네임",fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(5.dp))
+                    Image(
+                        painter = painterResource(R.drawable.arrowgo),
+                        contentDescription = null
+                    )
+                }
+            }
+            Spacer(modifier = Modifier.height(10.dp))
+            Button(
+                modifier = Modifier
+                    .height(70.dp)
+                    .width(350.dp),
+                onClick = {}
+            ) {
+                Row(
+                    modifier = Modifier,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Image(
+                        painter = painterResource(R.drawable.img3),
+                        contentDescription = null
+                    )
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("체크인 날짜", fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("닉네임",fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(5.dp))
+                    Image(
+                        painter = painterResource(R.drawable.arrowgo),
+                        contentDescription = null
+                    )
+                }
+            }
+            Spacer(modifier = Modifier.height(10.dp))
+            Button(
+                modifier = Modifier
+                    .height(70.dp)
+                    .width(350.dp),
+                onClick = {}
+            ) {
+                Row(
+                    modifier = Modifier,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Image(
+                        painter = painterResource(R.drawable.img3),
+                        contentDescription = null
+                    )
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("선호 활동", fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(20.dp))
+                    Text("닉네임",fontSize = 20.sp)
+                    Spacer(modifier = Modifier.width(5.dp))
                     Image(
                         painter = painterResource(R.drawable.arrowgo),
                         contentDescription = null
